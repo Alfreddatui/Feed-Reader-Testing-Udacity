@@ -35,7 +35,7 @@ $(function() {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
             });
-        })
+        });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -46,7 +46,7 @@ $(function() {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
             });
-        })
+        });
     });
 
 
@@ -65,7 +65,7 @@ $(function() {
          */
         it('menu is hidden by default', function() {
             expect(body.hasClass('menu-hidden')).toBe(true);
-        })
+        });
 
          /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
@@ -77,7 +77,7 @@ $(function() {
             expect(body.hasClass('menu-hidden')).toBe(false);
             menuIcon.trigger('click');
             expect(body.hasClass('menu-hidden')).toBe(true);
-        })
+        });
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
